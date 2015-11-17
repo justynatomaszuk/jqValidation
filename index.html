@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+</head>
+<body>
+  <header>
+		<nav>
+    <ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+     	<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+    </ul>
+  	</nav>
+	</header>
+  <main>
+    <article>
+      <section>
+				<h2>Contact us</h2>
+				<p>Whether you’re looking for answers, would like to solve a problem, or just want to let us know how we did, you’ll find many ways to contact us right here. We’ll help you resolve your issues quickly and easily, getting you back to more important things, like relaxing on your sofa.
+</p>
+				<div class="container">
+					<form class="cmxform" id="commentForm" method="get" action="#">
+						<fieldset>
+							<legend>Provide your data:</legend>
+							<p>
+								<label class="title" for="cname">Name</label>
+								<input id="cname" name="name" minlength="2" type="text" required>
+							</p>
+							<p>
+								<label class="title" for="cemail">E-Mail</label>
+								<input id="cemail" type="email" name="email" required>
+							</p>
+							<p>
+								<label class="title" for="curl">URL (optional)</label>
+								<input id="curl" type="url" name="url">
+							</p>
+							<p>
+								<label class="title" for="ccomment">Your comment (required)</label>
+								<textarea id="ccomment" name="comment" required></textarea>
+							</p>
+							<p>
+								<input class="submit" type="submit" value="Submit">
+							</p>
+						</fieldset>
+					</form>
+				</div>
+					<script>
+						$("#commentForm").validate();
+					</script>
+			</section>
+    </article>
+    <aside>
+			<h3>Did you know?</h3>
+			<p>Hemotoxic snake venom turns your blood into jelly. This drop of venom from a Russell’s pit viper causes coagulation almost instantly, which is why it kills thousands of people in Southeast Asia every year.</p>
+			<a href="http://www.businessinsider.com/snake-venom-coagulates-human-blood-2014-11">Source</a>
+		</aside>
+  </main>
+  <footer>
+		<ul>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">JOBS</a></li>
+			<li><a href="#">SUPPORT</a></li>
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="#">LOCATIONS</a></li>
+		</ul>
+	</footer>
+</body>
+
+</html> 
